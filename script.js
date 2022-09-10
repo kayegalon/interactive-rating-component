@@ -1,9 +1,5 @@
-/* 
--edit code so that when a rating is selected,
-and user selects another, previous selected is dismissed
-*/
-
 const ratingCard = document.getElementById("rating");
+const thankyouCard = document.getElementById("thank-you");
 const rate1 = document.getElementById("one");
 const rate2 = document.getElementById("two");
 const rate3 = document.getElementById("three");
@@ -12,8 +8,11 @@ const rate5 = document.getElementById("five");
 const resultText = document.getElementById("result");
 const submitBtn = document.getElementById("submit");
 
+thankyouCard.style.display = "none";
+
 submitBtn.addEventListener("click", function() {
 	ratingCard.style.display = "none";
+	thankyouCard.style.display = "flex";
 })
 
 rate1.addEventListener("click", function() {

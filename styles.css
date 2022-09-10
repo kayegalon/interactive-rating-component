@@ -109,10 +109,14 @@ button:hover {
 
 /*** MEDIA QUERY ***/
 @media screen and (max-width: 480px) and (min-width: 320px) {
+	#thank-you {
+		display: none;
+	}
+	
 	#rating, #thank-you {
 		width: 80%;
 		height: 90%;
-		margin: 2rem auto;
+		margin: 8rem auto;
 		padding: 2rem 2rem;
 	}
 }

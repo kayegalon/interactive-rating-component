@@ -106,3 +106,13 @@ button:hover {
 	text-align: center;
 	color: hsl(var(--colors-primary-orange));
 }
+
+/*** MEDIA QUERY ***/
+@media screen and (max-width: 480px) and (min-width: 320px) {
+	#rating, #thank-you {
+		width: 80%;
+		height: 90%;
+		margin: 2rem auto;
+		padding: 2rem 2rem;
+	}
+}

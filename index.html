@@ -1,0 +1,38 @@
+<!-- interactive rating component -->
+<!-- make sure to check accessibility issues from
+my faq card solution and apply it here -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Overpass&display=swap" rel="stylesheet">
+		<title>Interactive Rating Component</title>
+	</head>
+	<body>
+		<div id="rating">
+			<img class="star" src="icon-star.svg">
+			<h1>How did we do?</h1>
+			<p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+			<div id="rating-scale">
+				<div class="scale" id="one">1</div>
+				<div class="scale" id="two">2</div>
+				<div class="scale" id="three">3</div>
+				<div class="scale" id="four">4</div>
+				<div class="scale" id="five">5</div>
+			</div>
+			<button id="submit">SUBMIT</button>
+		</div>
+		<div id="thank-you">
+			<img src="illustration-thank-you.svg">
+			<p id="result">You selected 4 out of 5</p>
+			<h1>Thank you!</h1>
+			<p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

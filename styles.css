@@ -1,0 +1,108 @@
+:root {
+	/* hsl */
+	--colors-primary-orange: 25, 97%, 53%;
+	--colors-neutral-white: 0, 0%, 100%;
+	--colors-neutral-light-grey: 217, 12%, 63%;
+	--colors-neutral-medium-grey: 216, 12%, 54%;
+	--colors-neutral-dark-blue: 213, 19%, 18%;
+	--colors-neutral-very-dark-blue: 216, 12%, 8%;
+	--font-weight-bold: 700;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 15px;
+	font-family: 'Overpass', sans-serif;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	color: hsl(var(--colors-neutral-white));
+	overflow: hidden;
+}
+
+#thank-you {
+	display: none;
+}
+
+#rating, #thank-you {
+	border: 1px solid hsl(var(--colors-neutral-very-dark-blue));
+	border-radius: 15px;
+	background-color: hsl(var(--colors-neutral-very-dark-blue));
+	width: 25%;
+	height: 90%;
+	margin: 10rem auto;
+	padding: 2rem 2rem;
+}
+
+.star {
+	border: 1px solid hsl(var(--colors-neutral-dark-blue));
+	background-color: hsl(var(--colors-neutral-dark-blue));
+	border-radius: 50%;
+	padding: .5rem;
+}
+
+p, #rating-scale {
+	color: hsl(var(--colors-neutral-medium-grey));
+}
+
+#rating-scale {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.scale {
+	border: 1px solid hsl(var(--colors-neutral-dark-blue));
+	background-color: hsl(var(--colors-neutral-dark-blue));
+	border-radius: 50%;
+	padding-top: .7rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	text-align: center;
+}
+
+.scale:hover {
+	cursor: pointer;
+	border-color: hsl(var(--colors-neutral-light-grey));
+	background-color: hsl(var(--colors-neutral-light-grey));
+	color: hsl(var(--colors-neutral-white));
+}
+
+button {
+	width: 100%;
+	border: 1px solid hsl(var(--colors-primary-orange));
+	background-color: hsl(var(--colors-primary-orange));
+	color: hsl(var(--colors-neutral-white));
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	border-radius: 20px;
+	margin-top: 2rem;
+	font-weight: var(--font-weight-bold);
+}
+
+button:hover {
+	cursor: pointer;
+	border-color: hsl(var(--colors-neutral-white));
+	background-color: hsl(var(--colors-neutral-white));
+	color: hsl(var(--colors-primary-orange));
+}
+
+#thank-you {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#result {
+	border: 1px solid hsl(var(--colors-neutral-dark-blue));
+	background-color: hsl(var(--colors-neutral-dark-blue));
+	border-radius: 20px;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	width: 80%;
+	text-align: center;
+	color: hsl(var(--colors-primary-orange));
+}
